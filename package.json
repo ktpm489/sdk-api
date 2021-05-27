@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "engines": {
-   "node": "14.0.O",
-   "npm": "7.7.0" 
+   "node": "^14.0.O",
+   "npm": "^7.7.0" 
 },
   "scripts": {
     "postinstall": "npm run build",
