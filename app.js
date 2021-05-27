@@ -30,6 +30,7 @@ app.use((err, req, res, next) => {
     res.status(status);
     res.render('error');
 });
-app.listen(5000, () => {
+var port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log('Server started')
 })
