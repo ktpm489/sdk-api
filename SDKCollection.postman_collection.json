@@ -1,0 +1,122 @@
+{
+	"info": {
+		"name": "SDKCollection",
+		"_postman_id": "529879a8-1ee9-3c11-6d77-279af56ab57a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/sdk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" :\"K1\",\n\t\"description\": \"Skin Age Detection\",\n\t\"sdktype\": \"1,2,3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/sdk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"sdk"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/sdk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9000/sdk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"sdk"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/itemSdk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" :\"SP1\",\n\t\"image\": \" \",\n\t\"title\": \"Kem dưỡng Eucerin Q10 ACTIVE ban ngày dành cho da khô\",\n\t\"description\" : \" \",\n\t\"linkdetail\" : \"https://www.eucerin.vn/san-pham/q10-active/day-cream-for-dry-skin\",\n\t\"level\" : \"K1\",\n\t\"sdktype\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/itemSdk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"itemSdk"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/itemSdk?level='K1'&sdktype='1'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9000/itemSdk?level='K1'&sdktype='1'",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"itemSdk"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "'K1'",
+							"equals": true
+						},
+						{
+							"key": "sdktype",
+							"value": "'1'",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
